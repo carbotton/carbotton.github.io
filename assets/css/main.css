@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #4F525E; /*valor original #ffffff*/
+		background: linear-gradient(#819999, #76D8E7);/*#819999/*#96b2b2 /*#4F525E; /*valor original #ffffff*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -117,7 +117,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #FFFF;	/*valor original 585858*/
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Shadows Into Light", "Source Sans Pro", "Helvetica", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -151,7 +151,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #82cdcd !important; /*#f2849e !important;*/
 		}
 
 	strong, b {
@@ -1856,8 +1856,8 @@ input, select, textarea {
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: #82cdcd; /*#f2849e;*/
+				border-color: #82cdcd; /*#f2849e;*/
 			}
 
 			.icon.style2:active {
@@ -2494,7 +2494,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
+			color: #82cdcd !important; /*#f2849e !important;*/
 			box-shadow: inset 0 0 0 2px #f2849e;
 		}
 
@@ -2528,7 +2528,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #585858;
+			background-color: #819999; /*#585858; original*/
 			color: #ffffff !important;
 		}
 
@@ -2537,7 +2537,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #f2849e;
+				background-color: #82cdcd; /* original #f2849e;*/
 			}
 
 			input[type="submit"].primary:active,
@@ -2545,7 +2545,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #ee5f81;
+				background-color: #A1FFFF; /* original #ee5f81;*/
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2682,7 +2682,7 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: #82cdcd !important; /*#ffffff !important;*/
 				}
 
 				.tiles article > a h2 {
@@ -2737,7 +2737,7 @@ input, select, textarea {
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
-					background-color: #333333;
+					background-color: #82cdcd; /*#333333;*/
 					opacity: 0.35;
 				}
 
