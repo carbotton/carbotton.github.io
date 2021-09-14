@@ -117,7 +117,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #FFFF;	/*valor original 585858*/
-		font-family: "Shadows Into Light", "Source Sans Pro", "Helvetica", sans-serif;
+		font-family: "Montserrat", "Shadows Into Light", "Source Sans Pro", "Helvetica", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
