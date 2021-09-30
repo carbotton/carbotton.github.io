@@ -2682,7 +2682,7 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #82cdcd !important; /*#ffffff !important;*/
+					color: #f0f0f0 !important; /*#ffffff !important; majo color de letra del hover*/
 				}
 
 				.tiles article > a h2 {
