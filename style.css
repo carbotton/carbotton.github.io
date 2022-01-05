@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+
+/********* Main nav *********/
+	.main_nav {
+		position: fixed;
+		top: 0px;
+		max-height: 50px;
+		z-index: 999;
+		width: 100%;
+		padding-top: 17px;
+		background: none;
+		overflow: hidden;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		opacity: 0;
+		top: -100px;
+		padding-bottom: 6px;
+	}
+
+	@media only screen and (max-width: 766px) {
+		.main_nav {
+			padding-top: 25px;
+		}
+	}
+/********* End Main nav ********/
+
+/********* Header ********/
+	header {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	 width: 100%%;
+		height: 100vh;
+		background: #e55d87;
+		background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+		background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+		background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+	}
+/********* End Header ********/
+
+/********* Container ********/
+	.container {
+		position: relative;
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	/* For devices larger than 400px */
+	@media (min-width: 400px) {
+	.container {
+		width: 85%;
+		padding: 0;
+	}
+	}
+
+	/* For devices larger than 550px */
+	@media (min-width: 550px) {
+	.container {
+		width: 80%;
+	}
+
+	.container_footer {
+		position: relative;
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+		/* For devices larger than 400px */
+	@media (min-width: 400px) {
+	.container_footer {
+		width: 85%;
+		padding: 0;
+	}
+	}
+
+	/* For devices larger than 550px */
+	@media (min-width: 550px) {
+	.container_footer {
+		width: 80%;
+	}
+/********* End Container ********/
+
+
+/********* Column ********/
+	.column_footer, .columns_footer {
+		width: 100%;
+		float: left;
+		box-sizing: border-box;
+	}
+	.column_footer,  .columns_footer {
+		margin-left: 4%;
+	}
+	.column_footer:first-child,  .columns_footer:first-child {
+		margin-left: 0;
+	}
+	.three.columns_footer {
+		width: 22%;
+	}	
+	.nine.columns_footer {
+		width: 74.0%;
+	}
+/********* End Column ********/
+
+/********* Footer ********/
+	footer {
+		min-height: 120px;
+		padding: 40px 0 40px 0;
+		background: #e55d87;
+		background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+		background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+		background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+		box-sizing: border-box;
+	}
+	footer p {
+		color: #FFFFFF;
+		margin: 20px 0 0 0;
+	}
+	.socialIcons {
+		font-size: 34px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+/********* End Footer ********/
+
+/********* Mobile toggle ********/
+	.mobile-toggle {
+		display: none;
+		cursor: pointer;
+		font-size: 20px;
+		position: absolute;
+		right: 22px;
+		top: 0;
+		width: 30px;
+	}
+
+	@media only screen and (max-width: 766px) {
+	.mobile-toggle {
+		display: block;
+	}
+
+	}
+	.mobile-toggle span {
+		width: 30px;
+		height: 4px;
+		margin-bottom: 6px;
+		background: #000000;
+		display: block;
+	}
+/********* End Mobile toggle ********/
+
+/********* Title ********/
+	.title {
+		-webkit-align-self: center;
+		-ms-flex-item-align: center;
+		align-self: center;
+		padding: 2rem;
+		max-width: 960px;
+		text-align: center;
+	}
+	.title .smallsep {
+		background: #fff;
+		height: 2px;
+		width: 70px;
+		margin: auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.title h1 {
+		font-size: 80px;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 0.85;
+		margin-bottom: 28px;
+		margin: 0;
+		padding: 0;
+		color: #FFFFFF;
+	}
+	.title h2 {
+		color: #FFFFFF;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin-top: 50px;
+	}
+
+	@media only screen and (max-height: 700px) {
+	.title h1 {
+		font-size: 80px;
+	}
+	}
+	.title p {
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 150%;
+	}
+
+	@media only screen and (max-width: 500px) {
+	.title h1 {
+		font-size: 65px;
+	}
+	}
+	.title .icon {
+		color: #FFFFFF;
+		font-size: 50px;
+	}
+/********* End Title ********/
+
+/********* Grid ********/
+	.grid {
+	  display: grid;
+	  width: 114rem;
+	  grid-gap: 6rem;
+	  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	  align-items: start;
+	}
+	@media (max-width: 60em) {
+	  .grid {
+	    grid-gap: 3rem;
+	  }
+	}
+	.grid__item {
+	  background-color: #fff;
+	  border-radius: 0.4rem;
+	  overflow: hidden;
+	  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+	  cursor: pointer;
+	  transition: 0.2s;
+	}
+	.grid__item:hover {
+	  transform: translateY(-0.5%);
+	  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+	}
+/********* End Grid ********/
+
+/********* Card ********/
+	.card__img {
+	  display: block;
+	  width: 100%;
+	  height: 18rem;
+	  object-fit: cover;
+	}
+	.card__content {
+	  padding: 3rem 3rem;
+	}
+	.card__header {
+	  font-size: 3rem;
+	  font-weight: 500;
+	  color: #0d0d0d;
+	  margin-bottom: 1.5rem;
+	}
+	.card__text {
+	  font-size: 1.5rem;
+	  letter-spacing: 0.1rem;
+	  line-height: 1.7;
+	  color: #3d3d3d;
+	  margin-bottom: 2.5rem;
+	}
+	.card__btn {
+	  display: block;
+	  width: 100%;
+	  padding: 1.5rem;
+	  font-size: 2rem;
+	  text-align: center;
+	  color: #3363ff;
+	  background-color: #e6ecff;
+	  border: none;
+	  border-radius: 0.4rem;
+	  transition: 0.2s;
+	  cursor: pointer;
+	}
+	.card__btn span {
+	  margin-left: 1rem;
+	  transition: 0.2s;
+	}
+	.card__btn:hover, .card__btn:active {
+	  background-color: #dce4ff;
+	}
+	.card__btn:hover span, .card__btn:active span {
+	  margin-left: 1.5rem;
+	}
+/********* End Card ********/
+
+/********* Body ********/
+	.body-card {
+	  display: flex;
+	  justify-content: center;
+	  align-content: center;
+	  padding: 6rem;
+	  background-color: #f5f5f5;
+	  font-family: "Inter", sans-serif;
+  	  box-sizing: border-box;
+	}
+	@media (max-width: 60em) {
+	  .body-card {
+	    padding: 3rem;
+	  }
+/********* End Body ********/
