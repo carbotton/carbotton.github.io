@@ -3327,3 +3327,11 @@ input, select, textarea {
 			}
 
 		}
+
+/*majo*/
+.round_img{
+	border-radius: 30%;
+	width: 65px;
+	height: 70px;
+}
+/*end majo*/
