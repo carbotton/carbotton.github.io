@@ -252,7 +252,6 @@
 		color: #FFFFFF;
 		font-size: 20px;
 		font-weight: 400;
-		text-transform: uppercase;
 		letter-spacing: 5px;
 		margin-top: 50px;
 	}
@@ -284,6 +283,48 @@
 		color: #FFFFFF;
 		font-size: 50px;
 	}
+
+	.button {
+	  display: inline-block;
+	  border-radius: 10px;
+	  background-color: #64bfe0;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 20px;
+	  padding: 20px;
+	  padding-top: 14px;
+	  padding-bottom: 14px;
+	  width: 200px;
+	  transition: all 0.5s;
+	  cursor: pointer;
+	  margin: 5px;
+	}
+
+	.button span {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+	}
+
+	.button span:after {
+	  content: '\00bb';
+	  position: absolute;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+	}
+
+	.button:hover span {
+	  padding-right: 25px;
+	}
+
+	.button:hover span:after {
+	  opacity: 1;
+	  right: 0;
+	}	
 /********* End Title ********/
 
 /**********************************************************************************/
@@ -381,122 +422,9 @@
 	  }
 /********* End Body ********/
 
-/**********************************************************************************/
-/*     						GRID B  (gb)                                          */
-/**********************************************************************************/
-
-	.body-gb
-	{
-	  background-color:#eee
-	}
-	.wrap-gb
-	{
-	  margin:50px auto 0 auto;
-	  width:100%;
-	  display:flex;
-	  align-items:space-around;
-	  max-width:1200px;
-	}
-	.tile-gb
-	{
-	  width:380px;
-	  height:380px;
-	  margin:10px;
-	  background-color:#99aeff;
-	  display:inline-block;
-	  background-size:cover;
-	  position:relative;
-	  cursor:pointer;
-	  transition: all 0.4s ease-out;
-	  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
-	  overflow:hidden;
-	  color:white;
-	  font-family:'Roboto';
-	  
-	}
-	.tile-gb img
-	{
-	  height:100%;
-	  width:100%;
-	  position:absolute;
-	  top:0;
-	  left:0;
-	  z-index:0;
-	  transition: all 0.4s ease-out;
-	}
-	.tile-gb .text-gb
-	{
-	/*   z-index:99; */
-	  position:absolute;
-	  padding:30px;
-	  height:calc(100% - 60px);
-	}
-	.tile-gb h1
-	{
-	 
-	  font-weight:300;
-	  margin:0;
-	  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-	}
-	.tile-gb h2
-	{
-	  font-weight:100;
-	  margin:20px 0 0 0;
-	  font-style:italic;
-	   transform: translateX(200px);
-	}
-	.tile-gb p
-	{
-	  font-weight:300;
-	  margin:20px 0 0 0;
-	  line-height: 25px;
-	/*   opacity:0; */
-	  transform: translateX(-200px);
-	  transition-delay: 0.2s;
-	}
-	.animate-text-gb
-	{
-	  opacity:0;
-	  transition: all 0.6s ease-in-out;
-	}
-	.tile-gb:hover
-	{
-	/*   background-color:#99aeff; */
-	box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
-	  transform:scale(1.05);
-	}
-	.tile-gb:hover img
-	{
-	  opacity: 0.2;
-	}
-	.tile-gb:hover .animate-text
-	{
-	  transform:translateX(0);
-	  opacity:1;
-	}
-	.tile-gb:hover span
-	{
-	  opacity:1;
-	  transform:translateY(0px);
-	}
-
-	@media (max-width: 1000px) {
-	  .wrap-gb {
-	   flex-direction: column;
-	    width:400px;
-	  }
-	}
-
-	.a-gb{
-	  color:white;
-	}
-
-
-
 
 
 
 /**********************************************************************************/
 /*     					      	PAGE                                              */
 /**********************************************************************************/
-
