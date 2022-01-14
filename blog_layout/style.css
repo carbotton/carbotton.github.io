@@ -1,12 +1,33 @@
+/* ********** VARIABLES ********** */
+:root {
+  --pink: #e55d87;
+  --pink2: #d06d95;
+  --pink3: #b085ac;
+  --purple: #9b95ba;
+  --skyblue: #5fc3e4; 
+}
+/* ********** END variables ********** */
+
 * {
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
 body {
   font-family: Arial;
   padding: 20px;
-  background: #f1f1f1;
+  background: linear-gradient(135deg, var(--pink) 0%, var(--skyblue) 100%);
+}
+
+img {
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
 }
 
 /* Header/Blog Title */
@@ -14,7 +35,6 @@ body {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: white;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -67,3 +87,51 @@ body {
     padding: 0;
   }
 }
+
+/* ********** EXPANDING GRID ********** */
+    /* The grid: Three equal columns that floats next to each other */
+    .boxColumn {
+      float: left;
+      width: 33.33%;
+      padding: 50px;
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .containerTab {
+      padding: 20px;
+      color: white;
+    }
+
+    /* Clear floats after the columns */
+    .rowGrid:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Closable button inside the container tab */
+    .closebtn {
+      float: right;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    /* Boxes */
+    #b1 {
+      display:none;
+      background:var(--pink2);
+    }
+    #b2 {
+      display:none;
+      background:var(--pink3);
+    }
+    #b3 {
+      display:none;
+      background:var(--purple);
+    }
+    
+/* ********** END EXPANDING GRID ********** */
