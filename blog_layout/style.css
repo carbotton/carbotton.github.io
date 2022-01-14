@@ -5,6 +5,7 @@
   --pink3: #b085ac;
   --purple: #9b95ba;
   --skyblue: #5fc3e4; 
+  --whiteish: #EEEEF3;
 }
 /* ********** END variables ********** */
 
@@ -15,18 +16,11 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background: linear-gradient(135deg, var(--pink) 0%, var(--skyblue) 100%);
-}
-
-img {
-  width: 100%;
-  height: 60%;
-  padding: 20px;
-  border-radius: 50%;
+  background: linear-gradient(135deg, var(--skyblue) 0%, var(--pink3) 100%);
 }
 
 a {
-  color: #fff;
+  color: var(--skyblue);
   font-weight: bold;
 }
 
@@ -60,9 +54,10 @@ a {
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
+   background: var(--whiteish);
    padding: 20px;
    margin-top: 20px;
+   border-radius: 5%
 }
 
 /* Clear floats after the columns */
@@ -72,20 +67,19 @@ a {
   clear: both;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
+}
+
+.profileImg {
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 50%;
 }
 
 /* ********** EXPANDING GRID ********** */
@@ -104,6 +98,11 @@ a {
       padding: 20px;
       color: white;
     }
+
+    .containerTab a { /*this is called Combinator*/
+      color: #fff;
+      font-weight: bold;
+    }    
 
     /* Clear floats after the columns */
     .rowGrid:after {
@@ -135,3 +134,320 @@ a {
     }
     
 /* ********** END EXPANDING GRID ********** */
+
+/* ********** HEADER AND FOOTER  ********** */
+
+    /********* Main nav *********/
+      .main_nav {
+        position: fixed;
+        top: 0px;
+        max-height: 50px;
+        z-index: 999;
+        width: 100%;
+        background: none;
+        overflow: hidden;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
+        top: -100px;
+        padding-bottom: 6px;
+      }
+
+      @media only screen and (max-width: 766px) {
+      .main_nav {
+        padding-top: 25px;
+      }
+      }
+      .open-nav {
+        max-height: 400px !important;
+      }
+      .sticky {
+        background-color: #ffffff;
+        opacity: 1;
+        top: 0px;
+      }
+      nav {
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      @media only screen and (max-width: 766px) {
+      nav {
+        width: 100%;
+      }
+      }
+      nav ul {
+        list-style: none;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 766px) {
+      nav ul {
+        padding-top: 0px;
+        margin-bottom: 22px;
+        text-align: center;
+        width: 100%;
+      }
+      }
+      nav ul li {
+        display: inline-block;
+        margin-left: 35px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+
+      @media only screen and (max-width: 766px) {
+      nav ul li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+      }
+      nav ul li:first-child {
+        margin-top: 70px;
+      }
+      }
+      nav ul a {
+        text-transform: uppercase;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      nav ul a:hover {
+        color: #CFCFCF;
+      }
+    /********* End Main nav ********/
+
+    /********* Header ********/
+      header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%%;
+        height: 100vh;
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pink)', endColorstr='var(--skyblue)', GradientType=1 );*/
+      }
+    /********* End Header ********/
+
+    /********* Container ********/
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+
+      /* For devices larger than 400px */
+      @media (min-width: 400px) {
+      .container {
+        width: 85%;
+        padding: 0;
+      }
+      }
+
+      /* For devices larger than 550px */
+      @media (min-width: 550px) {
+      .container {
+        width: 80%;
+      }
+
+      .container_footer {
+        position: relative;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+        /* For devices larger than 400px */
+      @media (min-width: 400px) {
+      .container_footer {
+        width: 85%;
+        padding: 0;
+      }
+      }
+
+      /* For devices larger than 550px */
+      @media (min-width: 550px) {
+      .container_footer {
+        width: 80%;
+      }
+    /********* End Container ********/
+
+
+    /********* Column ********/
+      .column_footer, .columns_footer {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+      }
+      .column_footer,  .columns_footer {
+        margin-left: 4%;
+      }
+      .column_footer:first-child,  .columns_footer:first-child {
+        margin-left: 0;
+      }
+      .three.columns_footer {
+        width: 22%;
+      } 
+      .nine.columns_footer {
+        width: 74.0%;
+      }
+    /********* End Column ********/
+
+    /********* Footer ********/
+      footer {
+        min-height: 120px;
+        padding: 40px 0 40px 0;        
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );*/
+        box-sizing: border-box;
+      }
+      footer p {
+        color: #FFFFFF;
+        margin: 20px 0 0 0;
+      }
+      .socialIcons {
+        font-size: 34px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    /********* End Footer ********/
+
+    /********* Mobile toggle ********/
+      .mobile-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        right: 22px;
+        top: 0;
+        width: 30px;
+      }
+
+      @media only screen and (max-width: 766px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      }
+      .mobile-toggle span {
+        width: 30px;
+        height: 4px;
+        margin-bottom: 6px;
+        background: #000000;
+        display: block;
+      }
+    /********* End Mobile toggle ********/
+
+    /********* Title ********/
+      .title {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        padding: 2rem;
+        max-width: 960px;
+        text-align: center;
+      }
+      .title .smallsep {
+        background: #fff;
+        height: 2px;
+        width: 70px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .title h1 {
+        font-size: 80px;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 0.85;
+        margin-bottom: 28px;
+        margin: 0;
+        padding: 0;
+        color: #FFFFFF;
+      }
+      .title h2 {
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-top: 50px;
+      }
+      .title h3 { /*majo*/
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-top: 50px;   
+      }
+
+      @media only screen and (max-height: 700px) {
+      .title h1 {
+        font-size: 80px;
+      }
+      }
+      .title p {
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 150%;
+      }
+
+      @media only screen and (max-width: 500px) {
+      .title h1 {
+        font-size: 65px;
+      }
+      }
+      .title .icon {
+        color: #FFFFFF;
+        font-size: 50px;
+      }
+
+      .button {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: #64bfe0;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      } 
+    /********* End Title ********/
+
+/* ********** END HEADER AND FOOTER ********** */

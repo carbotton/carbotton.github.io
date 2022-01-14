@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Majo Carbajal</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./style.css">	
-	<title>Majo Carbajal</title>
+	<link rel="shortcut icon" href="../images/profile.png" type="image/vnd.microsoft.icon"> 
 </head>
 <body>
 
-<h2 class="header">ACA VA EL OTRO HEADER</h2>
-<h4 style="text-align:center">y tal vez el menu flotante</h4>
+<header id="header">  
+<div class="main_nav">
+  <div class="container">
+    <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+    <nav>
+      <ul>
+        <li><a class="smoothscroll" href="#header">Home</a></li>
+        <li><a class="smoothscroll" href="#current">Currently working</a></li>
+        <li><a class="smoothscroll" href="#highlight">Highlights</a></li>
+        <li><a class="smoothscroll" href="#all">All</a></li>
+        <li><a class="smoothscroll" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="title">
+  <div class="smallsep heading"></div>
+  <h1 class="heading"> Majo's portfolio</h1>
+  <h2 class="heading"> Hi! I'm an electronics engineering student, solution oriented and with great interest in data analysis and automation. In my portfolio you will find IoT projects, software projects (mostly C++ and Python) and hardware projects (in particular using digital and analog sensors with Arduino)</h2>
+</div>
+</header>
 
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
+    <div id="current" class="card">
       <h2>Currently working</h2>
       <div class="fakeimg" style="height:200px;">Image</div>
-      <h5>holis bolis chau</h5>      
+      <h4>Fuente de tensión regulable (12V)</h4>
+      <a href="https://abaft-fight-45e.notion.site/Fuente-de-continua-variable-c2d006aa1a2b4554bebebf2112374f74" style="color: var(--skyblue)">Bitácora</a>
     </div>
-    <div class="card">
+    <div id="highlight" class="card">
       <h2>Highlighted projects</h2>
-      <h5>Title description, Sep 2, 2017</h5>
 		<!-- Expand grid -->
 			<div class="rowGrid"> <!-- visible boxes -->
 			  <div class="boxColumn" onclick="openTab('b1');" style="background:var(--pink2);">
-			    Nombre del proyecto 1
+			    BondIoT
 			  </div>
 			  <div class="boxColumn" onclick="openTab('b2');" style="background:var(--pink3);">
-			    Nombre del proyecto 2
+			    proyecto 2
 			  </div>
 			  <div class="boxColumn" onclick="openTab('b3');" style="background:var(--purple);">
-			    Nombre del proyecto 3
+			    proyecto 3
 			  </div>
 			</div>		
 			<div id="b1" class="containerTab" style="background:var(--pink2); display:none;">
 			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-			  <h2>Nombre del proyecto 1</h2>
-			  <p>Breve descripcion del proyecto y <a href="#">link al repositorio</a></p>
+			  <h2>BondIoT</h2>
+			  <p>Proyecto IoT para equipar un ómnibus con un sistema que controle el aforo y la calidad del aire. <a href="https://github.com/ConectandoCosas2021/BondIoT">Ver repositorio</a>. En la <a href="https://carbotton.github.io/bondiot/">página web</a> del proyecto se detalla el proceso completo y se proporcionan todos los recursos necesarios para reproducir el proyecto.</p>
 			</div>
 			<div id="b2" class="containerTab" style="background:var(--pink3); display:none;">
 			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
@@ -49,23 +69,36 @@
 			</div>   
 		<!-- End expand grid -->	
     </div>
+    <div id="all" class="card">
+      <h2>All projects</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <h5>holis bolis chau</h5>      
+    </div>    
   </div>
   <div class="rightcolumn">
     <div class="card">
       <h2>About Me</h2>
-      <img src="../images/profile.png"/>      
+      <img src="../images/profile.png" class="profileImg"/>      
       <p> Hi! I'm an electronics engineering student, solution oriented and with great interest in data analysis and automation. In my portfolio you will find IoT projects, software projects (mostly C++ and Python) and hardware projects (in particular using digital and analog sensors with Arduino)</p>
     </div>
-    <div class="card">
-      <h3>Follow Me</h3>     
+    <div id="contact" class="card">
+      <h3>Contact</h3>     
     </div>
   </div>
 </div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<footer>
+  <div class="container_footer" id="contact">
+    <div class="nine columns_footer">
+      <p>This is the footer :D ->>>>> CREDITS TO CODEPENS I USED</p>
+    </div>
+    <div class="three columns_footer"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
+  </div>
+</footer>
 
+<!-- scripts for title animation -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
 <script  src="./script.js"></script>
 
 </body>
