@@ -386,47 +386,47 @@ a {
 /* ********** END HEADER AND FOOTER ********** */
 
 /* Image grid */
-.imgesGrid {
-  margin-top: 2rem;
-  padding: 1rem 0;
-}
-
-.imgGrid {
-  margin: 2rem auto;
-  max-width: 1100px;
-}
-
-.imgGrid img {
-  border-radius: 0.6rem;
-  height:326px; 
-  width:353px;
-}
-
-.imgGridItems {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  gap: 1rem;
-}
-
-.imgGridTitle {
-  color: var(--whiteish);
-  text-align: center;
-}
-
-.imgGridDesc {
-  color: var(--whiteish);
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make them on top of each other instead of next to each other */
-/* NO FUNCIONA ESTO AUN */
-@media screen and (max-width: 800px) {
-  .imgGridItems {   
-    width: 100%;
-    padding: 0;
+  .imgesGrid {
+    margin-top: 2rem;
+    padding: 1rem 0;
   }
-}
+
+  .imgGrid {
+    margin: 2rem auto;
+    max-width: 1100px;
+  }
+
+  .imgGrid img {
+    border-radius: 0.6rem;
+    height:326px; 
+    width:353px;
+  }
+
+  .imgGridItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+
+  .imgGridTitle {
+    color: var(--whiteish);
+    text-align: center;
+  }
+
+  .imgGridDesc {
+    color: var(--whiteish);
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make them on top of each other instead of next to each other */
+  /* NO FUNCIONA ESTO AUN 
+  @media screen and (max-width: 800px) {
+    .imagesGrid {   
+      width: 100%;
+      padding: 0;
+    }
+  }*/
 
 /* Image grid ends */
