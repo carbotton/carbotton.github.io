@@ -86,58 +86,6 @@ a {
   border-radius: 5%;
 }
 
-/* ********** EXPANDING GRID ********** */
-    /* The grid: Three equal columns that floats next to each other */
-    .boxColumn {
-      float: left;
-      width: 33.33%;
-      padding: 50px;
-      text-align: center;
-      font-size: 25px;
-      cursor: pointer;
-      color: white;
-    }
-
-    .containerTab {
-      padding: 20px;
-      color: white;
-    }
-
-    .containerTab a { /*this is called Combinator*/
-      color: #fff;
-      font-weight: bold;
-    }    
-
-    /* Clear floats after the columns */
-    .rowGrid:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Closable button inside the container tab */
-    .closebtn {
-      float: right;
-      color: white;
-      font-size: 35px;
-      cursor: pointer;
-    }
-
-    /* Boxes */
-    #b1 {
-      display:none;
-      background:var(--pink2);
-    }
-    #b2 {
-      display:none;
-      background:var(--pink3);
-    }
-    #b3 {
-      display:none;
-      background:var(--purple);
-    }
-    
-/* ********** END EXPANDING GRID ********** */
 
 /* ********** HEADER AND FOOTER  ********** */
 
