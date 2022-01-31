@@ -19,6 +19,12 @@ body {
   background: linear-gradient(135deg, var(--skyblue) 0%, var(--pink3) 100%);
 }
 
+@media screen and (max-width: 800px) {
+  body{
+    background: var(--skyblue)
+  }
+}
+
 a {
   color: var(--skyblue);
   font-weight: bold;
@@ -379,37 +385,48 @@ a {
 
 /* ********** END HEADER AND FOOTER ********** */
 
-/* Stakeholders start */
-.people {
+/* Image grid */
+.imgesGrid {
   margin-top: 2rem;
   padding: 1rem 0;
 }
 
-.stakeholders {
+.imgGrid {
   margin: 2rem auto;
   max-width: 1100px;
 }
 
-.stakeholders img {
+.imgGrid img {
   border-radius: 0.6rem;
+  height:326px; 
+  width:353px;
 }
 
-.persons {
+.imgGridItems {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 1rem;
 }
 
-.name {
-  color: var(--primary-color);
+.imgGridTitle {
+  color: var(--whiteish);
   text-align: center;
 }
 
-.role {
-  color: var(--secondary-color);
+.imgGridDesc {
+  color: var(--whiteish);
   text-align: center;
   font-size: 0.8rem;
 }
 
-/* Stakeholders ends */
+/* Responsive layout - when the screen is less than 800px wide, make them on top of each other instead of next to each other */
+/* NO FUNCIONA ESTO AUN */
+@media screen and (max-width: 800px) {
+  .imgGridItems {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Image grid ends */
