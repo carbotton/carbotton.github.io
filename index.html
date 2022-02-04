@@ -1,104 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-	<title>Majo Carbajal</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./style.css">	
-	<link rel="shortcut icon" href="./images/profile.png" type="image/vnd.microsoft.icon"> 
+  <meta charset="UTF-8">
+  <title>Majo :)</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'><link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<header id="header">  
-<div class="main_nav">
-  <div class="container">
-    <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
-    <nav>
-      <ul>
-        <li><a class="smoothscroll" href="#header">Home</a></li>
-        <li><a class="smoothscroll" href="#current">Currently working</a></li>
-         <li><a class="smoothscroll" href="#all">All</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
-<div class="title">
-  <div class="smallsep heading"></div>
-  <h1 class="heading"> Portfolio de proyectos</h1>
-</div>
-</header>
+<body> 
 
-<div class="row">
-  <div class="leftcolumn">
-    <div id="current" class="card">
+  <section id="header" class="header">  
+    <div class="main_nav">
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#current">Currently working</a></li>
+            <li><a class="smoothscroll" href="#all">All</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="title">
+      <div class="smallsep heading"></div>
+      <h1 class="heading"> Portfolio de proyectos</h1>
+    </div>
+  </section>
+
+  <section id="current" class="currentlyWorking">    
+    <div class="title">
+      <h2> Currently working</h2>
       <center>
-      <h2 class="header">Currently working</h2>
-      <a href="https://abaft-fight-45e.notion.site/Fuente-de-continua-variable-c2d006aa1a2b4554bebebf2112374f74" style="color: var(--skyblue)" target="_blank" rel="noopener noreferrer"><img src="./images/projects/fuente_tension.png" class="currentlyImg"/></a>      
-  	  </center>
-    </div>    
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <img src="./images/profile.png" class="profileImg"/>      
-      <p> Hi! My name is Majo and I'm an electronics engineering student, solution oriented and with great interest in data analysis and automation. In my portfolio you will find IoT projects, software projects (mostly C++ and Python) and hardware projects (in particular using digital and analog sensors with Arduino)</p>
+        <a href="https://abaft-fight-45e.notion.site/Fuente-de-continua-variable-c2d006aa1a2b4554bebebf2112374f74" target="_blank" rel="noopener noreferrer"><img src="./images/projects/fuente_tension.png" class="currentlyImg"/></a>      
+      </center> 
     </div>
-  </div>
-</div>
+  </section>  
 
-<!-- Image grid -->
-<section class="imgesGrid" id="all">
-  <div class="imgGrid">
-    <div class="imgGridItems">
-      <div>
-        <a href="https://abaft-fight-45e.notion.site/Fuente-de-continua-variable-c2d006aa1a2b4554bebebf2112374f74" target="_blank" rel="noopener noreferrer"><img src="./images/projects/fuente_tension.png" alt="Fuente de tension regulable"/></a>
-        <p class="imgGridTitle">Fuente de tensión regulable</p>
-        <p class="imgGridDesc">Lorem ipsum etcetera</p>
+  <!-- Image grid -->
+  <div id="all">
+
+    <div class="title">
+      <h1> All projects</h1>
+    </div>
+
+    <div class="imageGrid">
+
+      <div class="imageGridIN">
+
+        <div class="imageGridItem">
+
+          <div>
+            <a href="https://abaft-fight-45e.notion.site/Fuente-de-continua-variable-c2d006aa1a2b4554bebebf2112374f74" target="_blank" rel="noopener noreferrer"><img src="./images/projects/fuente_tension.png" alt="Fuente de tension regulable"/></a>
+            <p class="imgGridTitle">Fuente de tensión regulable</p>
+            <p class="imgGridDesc">Lorem ipsum etcetera</p>
+          </div>
+          <div>
+            <a href="https://carbotton.github.io/bondiot/" target="_blank" rel="noopener noreferrer"><img src="./images/projects/bondiot.png" alt="BondIoT" /></a>
+            <p class="imgGridTitle">BondIoT</p>
+            <p class="imgGridDesc">askdjnadajksndkajsd</p>
+          </div>
+          <div>
+            <a href="https://github.com/carbotton/discrete-filters-with-Scilab" target="_blank" rel="noopener noreferrer"><img src="./images/projects/filtros_fir.png" alt="Filtros FIR con Scilab" /></a>
+            <p class="imgGridTitle">Filtros FIR con Scilab</p>
+            <p class="imgGridDesc">asdasdsdasdasd</p>
+          </div>
+          <div>
+            <a href="https://github.com/carbotton/sumas" target="_blank" rel="noopener noreferrer"><img src="./images/projects/sumas.png" alt="Sumas" /></a>
+            <p class="imgGridTitle">Sumas</p>
+            <p class="imgGridDesc">Juego sencillo hecho en java</p>
+          </div> 
+          <div>
+            <img src="./images/pic04.jpg" alt="asdasd" />
+            <p class="imgGridTitle">asdsdasdsdasdasd</p>
+            <p class="imgGridDesc">askdjnadajksndkajsd</p>
+          </div> 
+          <div>
+            <img src="./images/pic07.jpg" alt="asdasd"/>
+            <p class="imgGridTitle">asdadasdadadasdasdasdasd</p>
+            <p class="imgGridDesc">Lorem ipsum etcetera</p>
+          </div>        
+
+        </div>
+
       </div>
-      <div>
-        <a href="https://carbotton.github.io/bondiot/" target="_blank" rel="noopener noreferrer"><img src="./images/projects/bondiot.png" alt="BondIoT" /></a>
-        <p class="imgGridTitle">BondIoT</p>
-        <p class="imgGridDesc">askdjnadajksndkajsd</p>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container_footer">
+      <div style="float:left">
+        <p>María José Carbajal Ottón. All rights reserved.</p>
       </div>
-      <div>
-        <a href="https://github.com/carbotton/discrete-filters-with-Scilab" target="_blank" rel="noopener noreferrer"><img src="./images/projects/filtros_fir.png" alt="Filtros FIR con Scilab" /></a>
-        <p class="imgGridTitle">Filtros FIR con Scilab</p>
-        <p class="imgGridDesc">asdasdsdasdasd</p>
-      </div>
-      <div>
-        <a href="https://github.com/carbotton/sumas" target="_blank" rel="noopener noreferrer"><img src="./images/projects/sumas.png" alt="Sumas" /></a>
-        <p class="imgGridTitle">Sumas</p>
-        <p class="imgGridDesc">Juego sencillo hecho en java</p>
-      </div>      
-      <div>
-        <img src="./images/pic04.jpg" alt="asdasd" />
-        <p class="imgGridTitle">asdsdasdsdasdasd</p>
-        <p class="imgGridDesc">askdjnadajksndkajsd</p>
-      </div> 
-      <div>
-        <img src="./images/pic07.jpg" alt="asdasd"/>
-        <p class="imgGridTitle">asdadasdadadasdasdasdasd</p>
-        <p class="imgGridDesc">Lorem ipsum etcetera</p>
+      <div style="float:right">
+        <p>Design inspiration: <a href="inspo.html" target="_blank" rel="noopener noreferrer">here.</a></p>
       </div>
     </div>
-  </div>
-</section>  
+  </footer>
 
-<footer>
-  <div class="container_footer" id="contact">
-    <div class="leftcolumn">
-    	<p>María José Carbajal Ottón. All rights reserved.</p>
-    </div>
-    <div class="rightcolumn">
-      <p>Design inspiration: <a href="inspo.html" target="_blank" rel="noopener noreferrer">here.</a></p>     
-    </div>    
-  </div>
-</footer>
-
-<!-- scripts for title animation -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-<script  src="./script.js"></script>
+  <!-- scripts for title animation -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="./script.js"></script>
 
 </body>
+
 </html>
