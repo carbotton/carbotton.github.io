@@ -196,6 +196,10 @@ a {
         color: #FFFFFF;
         margin: 20px 0 0 0;
       }
+      footer a {
+        font-size: 30px;
+        color: white;
+      }
     /********* End Footer ********/
 
     /********* Mobile toggle ********/
@@ -384,3 +388,16 @@ a {
   max-height: 250px;
   width: 80%;
 }
+
+/* Arrow */
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+  }  
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
